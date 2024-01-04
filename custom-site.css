@@ -1,0 +1,215 @@
+.navbar-horizontal .navbar-brand img {
+    height: 60px !important;
+}
+.bg-gradient-primary {
+    background: linear-gradient(87deg, white 0, white 100%) !important;
+}
+
+/*
+.bg-gradient-primary {
+    background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
+}
+*/
+
+.card.shadow {
+    border: 3px solid #172b4d !important;
+}
+
+.navbar-vertical .navbar-brand-img, .navbar-vertical .navbar-brand > img {
+    max-height: 3rem;
+}
+
+.btn-primary {
+    background-color: #2559A6;
+    border-color: #172B4D;
+}
+.btn-primary:hover {
+    /* background-color: #5e72e4;
+    border-color: #5e72e4; */
+    color: black;
+}
+
+.navbar-horizontal.navbar-transparent .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bolder;
+}
+
+.navbar-horizontal.navbar-transparent .navbar-nav .nav-link:hover {
+    color: rgba(11, 9, 113, 0.6);
+}
+
+.navbar-vertical.navbar-expand-xs .navbar-nav > .nav-item > .nav-link.active {
+    background: #ced5dc !important;
+}
+
+.g-sidenav-show .sidenav .nav-link-text {
+    margin-left: 20px;
+}
+
+.navbar-vertical .navbar-nav .nav-link > i {
+    min-width: 0 !important;
+    font-size: 1rem !important;
+}
+.svg-inline--fa {
+    height: 1.5em;
+}
+
+.text-sidebar {
+    color: #3646a3 !important;
+}
+
+input[type="radio"].form-control, input[type="checkbox"].form-control {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.field-radio-checkbox div div{
+    width:20% !important;
+    float: left;
+    margin-top: 10px;
+}
+.text-error{
+    color: red !important;
+}
+
+    /* .btn-primary:focus, .btn-primary.focus {
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0 rgba(94, 114, 228, 0.5); }
+    .btn-primary.disabled, .btn-primary:disabled {
+      color: #fff;
+      background-color: #5e72e4;
+      border-color: #5e72e4; }
+    .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+    .show > .btn-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #324cdd;
+      border-color: #5e72e4; }
+      .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+      .show > .btn-primary.dropdown-toggle:focus {
+        box-shadow: none, 0 0 0 0 rgba(94, 114, 228, 0.5); 
+}
+   */
+
+
+.nav-fill .nav-item{
+    flex: unset;
+}
+
+.nav-pills .nav-link{
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-btn{
+    margin-top: 1.9rem;
+}
+.card .table td{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.table thead th ,.table td{
+    font-size: 14px;
+}
+.slot-calender{
+    display: none;
+   }
+
+   .slot-calender input[type="radio"] {
+    visibility: hidden; /* 1 /
+    height: 0; / 2 /
+    width: 0; / 2 */
+  }
+
+  .slot-calender label {
+    flex: auto;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #525252;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: color --transition-fast ease-out, 
+                background-color --transition-fast ease-in;
+    user-select: none;
+   margin-right: 8px;
+  }
+
+  .slot-calender label:last-of-type {
+   margin-right: 0;
+  }
+
+  .slot-calender input[type="radio"]:checked + label {
+    background-color: #2559a6;
+    color: #fff;
+}
+
+  .slot-calender input[type="radio"]:hover:not(:checked) + label {
+   background-color: #2559a6;
+   color: #fff;
+  }
+
+  .block, .clinic-visit, .tele-visit {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+  .block{
+    background-color: #525252;
+  }
+  .slot-available p{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  .clinic-visit{
+    background-color: #2559a6;
+  }
+
+  .tele-visit {
+    border: 1px solid #2559a6;
+  }
+
+  .slot-calender label.televisit {
+    border: 1px solid #2559a6;
+    background: #fff;
+    color: #525252;
+}
+
+.desk-icon > div{
+    /*border: 1px solid #2559a6;*/
+    margin-bottom: 3cap;
+}
+.desk-icon{
+    /*color: #8965e0 !important;*/
+    font-weight: bolder;
+    font-size: larger;
+
+    .icon {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .icon-shape {
+        padding: 24px;
+    }
+
+    .icon-shape svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.card-profile-image img {
+    max-width: 100px;
+}
+
+
+/*03-01-2024*/
+.chat-list .bg-gradient-primary{
+    background: linear-gradient(310deg,#5e72e4,#825ee4) !important;
+}
+
+.max-height-vh-70 {
+    max-height: 70vh!important;
+}
