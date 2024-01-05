@@ -13,18 +13,19 @@
 
 <body>
 
-    <div class="container-fluid my-6">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4 col-md-5 col-12">
-                <div class="card blur shadow-blur max-height-vh-70 overflow-auto overflow-x-hidden mb-5 mb-lg-0 chat-list">
+                <div class="card blur shadow-blur  mb-5 mb-lg-0 chat-list">
                     <div class="card-header p-3">
                         <h4>Friends</h4>
                         <input type="email" class="form-control" placeholder="Search Contact" aria-label="Email">
                     </div>
-                    <div class="card-body p-2">
-                        <a href="javascript:;" class="d-block p-2 rounded-lg bg-gradient-primary">
+                    <div class="card-body p-2 max-height-vh-70 overflow-auto overflow-x-hidden">
+                        <a href="javascript:;" class="d-block p-2 rounded-lg bg-gradient-primary chat-show">
                             <div class="d-flex p-2">
-                                <img alt="Image" src="https://picsum.photos/200/300" class="avatar shadow rounded-circle">
+                                <img alt="Image" src="https://picsum.photos/200/300"
+                                    class="avatar shadow rounded-circle">
                                 <div class="ml-3">
                                     <div class="justify-content-between align-items-center">
                                         <h4 class="text-white mb-0">Charlie Watson
@@ -37,7 +38,8 @@
                         </a>
                         <a href="javascript:;" class="d-block p-2">
                             <div class="d-flex p-2">
-                                <img alt="Image" src="https://picsum.photos/200/200" class="avatar shadow rounded-circle">
+                                <img alt="Image" src="https://picsum.photos/200/200"
+                                    class="avatar shadow rounded-circle">
                                 <div class="ml-3">
                                     <h4 class="mb-0">Jane Doe</h4>
                                     <p class="text-muted text-xs mb-2">1 hour ago</p>
@@ -48,7 +50,8 @@
                         </a>
                         <a href="javascript:;" class="d-block p-2">
                             <div class="d-flex p-2">
-                                <img alt="Image" src="https://picsum.photos/200/300" class="avatar shadow rounded-circle">
+                                <img alt="Image" src="https://picsum.photos/200/300"
+                                    class="avatar shadow rounded-circle">
                                 <div class="ml-3">
                                     <h4 class="mb-0">Mila Skylar</h4>
                                     <p class="text-muted text-xs mb-2">24 min ago</p>
@@ -59,7 +62,8 @@
                         </a>
                         <a href="javascript:;" class="d-block p-2">
                             <div class="d-flex p-2">
-                                <img alt="Image" src="https://picsum.photos/200/300" class="avatar shadow rounded-circle">
+                                <img alt="Image" src="https://picsum.photos/200/300"
+                                    class="avatar shadow rounded-circle">
                                 <div class="ml-3">
                                     <h4 class="mb-0">Sofia Scarlett</h4>
                                     <p class="text-muted text-xs mb-2">7 hours ago</p>
@@ -70,7 +74,8 @@
                         </a>
                         <a href="javascript:;" class="d-block p-2">
                             <div class="d-flex p-2">
-                                <img alt="Image" src="https://picsum.photos/200/300" class="avatar shadow rounded-circle">
+                                <img alt="Image" src="https://picsum.photos/200/300"
+                                    class="avatar shadow rounded-circle">
                                 <div class="ml-3">
                                     <div class="justify-content-between align-items-center">
                                         <h4 class="mb-0">Tom Klein</h4>
@@ -84,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-7 col-12">
+            <div class="col-lg-8 col-md-7 col-12 chat-msg">
                 <div class="card blur shadow-blur max-height-vh-70">
                     <div class="card-header shadow-lg">
                         <div class="row">
@@ -96,13 +101,6 @@
                                         <span class="text-sm text-dark opacity-8">last seen today at 1:53am</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-1 col-2 my-auto pe-0">
-                                <button class="btn btn-icon-only shadow-none text-dark mb-0 mr-3 mr-sm-0" type="button"
-                                    data-toggle="tooltip" data-placement="top" title=""
-                                    data-original-title="Video call">
-                                    <i class="ni ni-camera-compact"></i>
-                                </button>
                             </div>
                             <div class="col-lg-1 col-2 my-auto pl-0">
                                 <div class="dropdown">
@@ -138,6 +136,9 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="col-2 d-block d-md-none back">
+                                <p class="text-nowrap">Back</p>
                             </div>
                         </div>
                     </div>
@@ -310,7 +311,23 @@
     <script src="argon.js"></script>
 
     <script>
+        $(document).ready(function ($) {
+            if ($(window).width() < 767) {
+                $(".chat-show").click(function () {
+                    $(".chat-list").hide();
+                });
+                $(".chat-show").click(function () {
+                    $(".chat-msg").show();
+                });
 
+                $(".back").click(function () {
+                    $(".chat-msg").hide();
+                });
+                $(".back").click(function () {
+                    $(".chat-list").show();
+                });
+            }
+        });
     </script>
 </body>
 
